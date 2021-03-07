@@ -1,0 +1,21 @@
+.hero{
+    background-image: linear-gradient(to right rgb(0, 0, 0, 0.2) rgb(0,0,0,0.9)), url("../images/"); height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+
+
+.logo {
+
+}
+
+.container {
+
+}
+
+.navbar{
+
+}

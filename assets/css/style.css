@@ -37,13 +37,33 @@ body {
   text-align: center;
 }
 .container h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  animation: moveInFromLeftAndResize 1s ease-out;
+
 }
 }
 .container h2 {
   font-size: 3rem;
+  animation: moveDownUp 1s ease-out;
 }
 .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: moveDownUP 1s ease-in-out;
+}
+
+.btn {
+  background-color: lightsalmon;
+  padding: 0.8rem;
+  min-width: 200px;
+  margin: 10px;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.8rem;
+  border-radius: 0.2rem;
+
+
 }
 
 @keyframes moveFromTopWithBounce {
@@ -57,4 +77,58 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+@keyframes moveInFromLeftAndResize {
+  0%{
+    font-size: 7rem;
+    transform: translateX(-50%);
+
+  }
+
+  40%{
+    font-size: 6rem;
+    transform: translateX(-20%);
+
+  }
+  100%{
+
+    font-size: 5rem;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveDownUp {
+  0%{
+    font-size: 7rem;
+    transform: translateY(0);
+
+  }
+
+  40%{
+    font-size: 6rem;
+    transform: translateY(20%);
+
+  }
+  100%{
+
+    font-size: 5rem;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+
+  }
+  50%{
+    opacity: 0.5;
+
+  }
+  100%{
+    opacity: 1;
+
+  }
+
 }

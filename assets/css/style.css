@@ -6,11 +6,7 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(
-      to right,
-      rgb(0, 0, 0, 0.2),
-      rgb(0, 0, 0, 0.9)
-    ),
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)),
     url(../images/bahamas.png);
   background-size: cover;
   background-position: center;
@@ -37,7 +33,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: whitesmoke;
+  color: gray;
   text-align: center;
 }
 .container h1 {
@@ -47,13 +43,12 @@ body {
 
 .container h2 {
   font-size: 3rem;
-  animation: moveDownUp 1s ease-out;
+  animation: fadeIn 1s ease-out;
 }
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  animation: moveDownUP 1s ease-in-out;
 }
 
 .btn {
@@ -96,7 +91,7 @@ body {
   }
 }
 
-@keyframes moveDownUp {
+/* @keyframes moveDownUp {
   0% {
     font-size: 7rem;
     transform: translateY(0);
@@ -110,20 +105,16 @@ body {
     font-size: 5rem;
     transform: translateY(100%);
   }
-}
-
-/* @keyframes fadeIn {
-  0%{
-    opacity: 0;
-
-  }
-  50%{
-    opacity: 0.5;
-
-  }
-  100%{
-    opacity: 1;
-
-  }
-
 } */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

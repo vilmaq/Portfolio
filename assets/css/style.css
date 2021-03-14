@@ -1,6 +1,7 @@
 html {
   /* Modifying the root font size */
   font-size: 10px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 body {
   margin: 0px;
@@ -65,9 +66,87 @@ body {
   margin-bottom: 1rem;
 }
 .contact {
-  background-color: orange;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+.contact-form {
+  margin: 10px auto;
+  max-width: 50%;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.contact-form li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.contact-form label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="date"],
+.contact-form input[type="number"],
+.contact-form input[type="search"],
+.contact-form input[type="time"],
+.contact-form input[type="url"],
+.contact-form input[type="email"],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px;
+  margin: 0px;
+  outline: none;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="date"]:focus,
+.contact-form input[type="number"]:focus,
+.contact-form input[type="search"]:focus,
+.contact-form input[type="time"]:focus,
+.contact-form input[type="url"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  -moz-box-shadow: 0 0 8px #88d5e9;
+  -webkit-box-shadow: 0 0 8px #88d5e9;
+  box-shadow: 0 0 8px #88d5e9;
+  border: 1px solid #88d5e9;
+}
+.contact-form .field-divided {
+  width: 49%;
+}
+
+.contact-form .field-long {
+  width: 100%;
+}
+.contact-form .field-select {
+  width: 100%;
+}
+.contact-form .field-textarea {
+  height: 100px;
+}
+.contact-form input[type="submit"],
+.contact-form input[type="button"] {
+  background: #4b99ad;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="button"]:hover {
+  background: #4691a4;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.contact-form .required {
+  color: red;
 }
 
 .cards-container {

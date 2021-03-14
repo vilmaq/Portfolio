@@ -1,0 +1,207 @@
+html {
+  /* Modifying the root font size */
+  font-size: 10px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)),
+    url(../images/bahamas.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  padding: 2rem;
+}
+.container {
+  background-color: orange;
+  /* height: 100hv; */
+  display: flex;
+}
+.navbar {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  flex-grow: 1;
+}
+/* .hero {
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)),
+    url(../images/bahamas.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+} */
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.logo-image {
+  width: 10rem;
+}
+
+.logo--animated {
+  animation: moveFromTopWithBounce 4s ease-out;
+}
+
+.headings {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+  text-align: center;
+  height: 100vh;
+  padding: 1rem;
+  width: 100%;
+  flex-grow: 1;
+}
+.headings h1 {
+  font-size: 5rem;
+  animation: moveInFromLeftAndResize 1s ease-out;
+}
+
+.headings h2 {
+  font-size: 3rem;
+  animation: fadeIn 1s ease-out;
+}
+
+/* .container {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+  text-align: center;
+  height: 100vh;
+  padding: 1rem;
+  width: 100%;
+  flex-grow: 1; */
+
+.about {
+  padding: 1ren;
+  margin-bottom: 1ren;
+}
+
+.projects {
+  padding: 1ren;
+  margin-bottom: 1ren;
+}
+.contact {
+  padding: 1ren;
+  margin-bottom: 1ren;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  background-color: orange;
+  margin: 1rem;
+  flex-shrink: 1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.card-image-container {
+  height: 20rem;
+  width: 28rem;
+  margin-bottom: 1rem;
+}
+.card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.card-title {
+  background-color: orange;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.card-subtitle {
+  background-color: orange;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.card-info {
+  background-color: orange;
+  padding: 1rem;
+}
+
+/* .btn {
+  background-color: lightsalmon;
+  padding: 0.8rem;
+  min-width: 200px;
+  margin: 10px;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.8rem;
+  border-radius: 0.2rem;
+} */
+
+@keyframes moveFromTopWithBounce {
+  0% {
+    transform: translateY(-10rem);
+  }
+
+  50% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInFromLeftAndResize {
+  0% {
+    font-size: 7rem;
+    transform: translateX(-50%);
+  }
+
+  40% {
+    font-size: 6rem;
+    transform: translateX(-20%);
+  }
+  100% {
+    font-size: 5rem;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    text-align: center;
+  }
+}

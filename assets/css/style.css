@@ -9,25 +9,18 @@ body {
     url(../images/bahamas.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
-  position: relative;
-}
-
-/* .hero {
-  background-image: linear-gradient(to right, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)),
-    url(../images/bahamas.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   height: 100vh;
   position: relative;
-} */
-
+}
+.container {
+  height: 100vh;
+  display: flex;
+}
 .logo {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 1rem;
+  left: 1rem;
 }
 
 .logo-image {
@@ -37,109 +30,79 @@ body {
 .logo--animated {
   animation: moveFromTopWithBounce 4s ease-out;
 }
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: gray;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-}
 
 .navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-basis: 20%;
+  padding: 2rem;
 }
 
 .content {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: gray;
-  text-align: center;
-  height: 100vh;
+  /* display: block; */
   padding: 1rem;
-  width: 100%;
   flex-grow: 1;
 }
-.content h1 {
-  font-size: 5rem;
-  animation: moveInFromLeftAndResize 1s ease-out;
-}
 
-.content h2 {
-  font-size: 3rem;
+.title {
+  font-size: 4rem;
+  animation: moveInFromLeftAndResize 1s ease-out;
+  color: gray;
+}
+.subtitle {
+  font-size: 1rem;
   animation: fadeIn 1s ease-out;
+  color: gray;
+
+  margin-bottom: 1rem;
 }
 
 .about {
-  padding: 1ren;
-  margin-bottom: 1ren;
+  background-color: green;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
-
 .projects {
-  padding: 1ren;
-  margin-bottom: 1ren;
+  background-color: orange;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .contact {
-  padding: 1ren;
-  margin-bottom: 1ren;
+  background-color: orange;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cards-container {
   display: flex;
+  background-color: beige;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .card {
-  background-color: orange;
+  background-color: blueviolet;
   margin: 1rem;
-  flex-shrink: 1;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 
 .card-image-container {
   height: 20rem;
-  width: 28rem;
-  margin-bottom: 1rem;
+  max-width: 20rem;
 }
 .card-image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-.card-title {
-  background-color: orange;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
-.card-subtitle {
-  background-color: orange;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
-.card-info {
-  background-color: orange;
-  padding: 1rem;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-/* .btn {
-  background-color: lightsalmon;
-  padding: 0.8rem;
-  min-width: 200px;
-  margin: 10px;
-  text-decoration: none;
-  color: gray;
-  font-size: 1.8rem;
-  border-radius: 0.2rem;
-} */
+.card-title {
+  background-color: blue;
+  margin-bottom: 1rem;
+}
+.card-subtitle {
+  background-color: gold;
+  margin-bottom: 1rem;
+}
+.card-info {
+  background-color: white;
+  margin-bottom: 1rem;
+}
 
 @keyframes moveFromTopWithBounce {
   0% {
@@ -181,23 +144,13 @@ body {
     opacity: 1;
   }
 }
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    flex-direction: row;
-  }
-}
-/* add media query for 1 Tablet and 2 Mobile*/
-@media screen and(max-width:768px) {
+/* media query for Tablet and Mobile */
+@media screen and(max-width: 768px) {
   .container {
     flex-direction: column;
   }
 }
-@media screen and(max-width:400px) {
+@media screen and(max-width: 560px) {
   .container {
     flex-direction: column;
   }

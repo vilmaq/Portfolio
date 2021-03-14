@@ -6,8 +6,12 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(to left, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)),
-    url("/images/backgroundimg.png");
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0, 0.2),
+      rgb(0, 0, 0, 0.9)
+    ),
+    url("/images/bahamas.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,9 +43,8 @@ body {
 .container h1 {
   font-size: 5rem;
   animation: moveInFromLeftAndResize 1s ease-out;
+}
 
-}
-}
 .container h2 {
   font-size: 3rem;
   animation: moveDownUp 1s ease-out;
@@ -62,8 +65,6 @@ body {
   color: gray;
   font-size: 1.8rem;
   border-radius: 0.2rem;
-
-
 }
 
 @keyframes moveFromTopWithBounce {
@@ -80,38 +81,32 @@ body {
 }
 
 @keyframes moveInFromLeftAndResize {
-  0%{
+  0% {
     font-size: 7rem;
     transform: translateX(-50%);
-
   }
 
-  40%{
+  40% {
     font-size: 6rem;
     transform: translateX(-20%);
-
   }
-  100%{
-
+  100% {
     font-size: 5rem;
     transform: translateX(0);
   }
 }
 
 @keyframes moveDownUp {
-  0%{
+  0% {
     font-size: 7rem;
     transform: translateY(0);
-
   }
 
-  40%{
+  40% {
     font-size: 6rem;
     transform: translateY(20%);
-
   }
-  100%{
-
+  100% {
     font-size: 5rem;
     transform: translateY(100%);
   }

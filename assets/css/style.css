@@ -41,10 +41,11 @@ body {
 }
 
 .navbar {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
   padding: 2rem;
+  flex-basis: 20%;
 }
 
 .content {
@@ -57,6 +58,8 @@ body {
   text-align: center;
   height: 100vh;
   padding: 1rem;
+  width: 100%;
+  flex-grow: 1;
 }
 .content h1 {
   font-size: 5rem;
@@ -70,13 +73,26 @@ body {
 
 .about {
   padding: 1ren;
+  margin-bottom: 1ren;
 }
 
 .projects {
   padding: 1ren;
+  margin-bottom: 1ren;
 }
 .contact {
   padding: 1ren;
+  margin-bottom: 1ren;
+}
+
+.cards-conteiner {
+  display: flex;
+}
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  margin: 1rem;
 }
 
 /* .btn {
@@ -130,7 +146,7 @@ body {
     opacity: 1;
   }
 }
-/* add media query */
+/* add media query for 1 Tablet and 2 Mobile*/
 @media screen and(max-width:768px) {
   .container {
     flex-direction: column;

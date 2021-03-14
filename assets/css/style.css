@@ -100,11 +100,13 @@ body {
 
 .card-image-container {
   height: 20rem;
+  width: 28rem;
   margin-bottom: 1rem;
 }
 .card-image {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .card-title {
   background-color: orange;
@@ -170,6 +172,16 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    flex-direction: row;
   }
 }
 /* add media query for 1 Tablet and 2 Mobile*/

@@ -10,13 +10,14 @@ body {
     url(../images/bahamas.png);
   background-size: cover;
   background-position: center;
-  background-repeat: repeat-y;
-  height: 100vh;
+  background-repeat: no-repeat;
   position: relative;
+  background-size: 100% 100%;
 }
 .container {
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
 }
 .logo {
   position: absolute;
@@ -34,6 +35,7 @@ body {
 
 .navbar {
   padding: 2rem;
+  margin-top: 20rem;
 }
 
 .content {
@@ -46,34 +48,102 @@ body {
   font-size: 4rem;
   animation: moveInFromLeftAndResize 1s ease-out;
   color: gray;
+  position: absolute;
+  top: 1rem;
+  left: 7rem;
 }
 .subtitle {
   font-size: 1rem;
   animation: fadeIn 1s ease-out;
   color: gray;
-
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
 }
-
 .about {
-  background-color: green;
   padding: 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  position: absolute;
+  top: 7rem;
+  left: 20rem;
+}
+.card-about {
+  background-color: whitesmoke;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5px;
+  height: 15rem;
+  max-width: 15rem;
+}
+
+.card-image-about {
+  height: 15rem;
+  max-width: 15rem;
+}
+
+.card-about-me-content {
+  height: 10rem;
+  max-width: 74rem;
+  padding: 1rem;
+  margin-top: 4rem;
 }
 .projects {
-  background-color: orange;
   padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 20em;
+  left: 20rem;
+}
+
+.card {
+  background-color: whitesmoke;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5px;
+}
+
+.card-image-container {
+  height: 20rem;
+  max-width: 20em;
+}
+.card-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+.card-subtitle {
+  margin-bottom: 1rem;
+}
+.card-info {
   margin-bottom: 1rem;
 }
 .contact {
   padding: 1rem;
   margin-bottom: 1rem;
+  justify-content: center;
+  position: absolute;
+  top: 45rem;
+  left: 20rem;
+  display: flex;
 }
+
 .contact-form {
   margin: 10px auto;
   max-width: 50%;
   padding: 20px 12px 10px 20px;
   font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  justify-content: center;
 }
 .contact-form li {
   padding: 0;
@@ -147,40 +217,6 @@ select {
 }
 .contact-form .required {
   color: red;
-}
-
-.cards-container {
-  display: flex;
-  background-color: beige;
-  flex-wrap: wrap;
-}
-.card {
-  background-color: blueviolet;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.card-image-container {
-  height: 20rem;
-  max-width: 20rem;
-}
-.card-image {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.card-title {
-  background-color: blue;
-  margin-bottom: 1rem;
-}
-.card-subtitle {
-  background-color: gold;
-  margin-bottom: 1rem;
-}
-.card-info {
-  background-color: white;
-  margin-bottom: 1rem;
 }
 
 @keyframes moveFromTopWithBounce {

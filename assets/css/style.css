@@ -14,6 +14,7 @@ body {
   position: relative;
   background-size: 100% 100%;
 }
+
 .container {
   height: 100vh;
   display: flex;
@@ -36,10 +37,23 @@ body {
 }
 
 .navbar {
-  padding: 2rem;
-  margin-top: 20rem;
+  list-style-type: none;
+  margin-top: 10rem;
+  padding: 0;
+  width: 150px;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
+/* Change the link color on hover */
+li a:hover {
+  background-color: orange;
+  color: white;
+}
 .content {
   /* display: block; */
   padding: 1rem;
@@ -67,8 +81,7 @@ body {
   margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  /* position: absolute; */
+  justify-content: center;
   top: 7rem;
   left: 20rem;
 }
@@ -114,6 +127,7 @@ body {
   height: 25rem;
   max-width: 25em;
 }
+
 .card-image1 {
   display: block;
   object-fit: cover;
@@ -121,9 +135,19 @@ body {
   height: 100%;
 }
 
+.card-image-container1:hover {
+  height: 30rem;
+  max-width: 30em;
+}
+
 .card-image-container {
   height: 20rem;
   max-width: 20em;
+}
+
+.card-image-container:hover {
+  height: 25rem;
+  max-width: 25em;
 }
 .card-image {
   display: block;
@@ -141,15 +165,6 @@ body {
 .card-info {
   margin-bottom: 1rem;
 }
-
-/* .contact {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: absolute;
-} */
 
 .contact {
   padding: 20px;

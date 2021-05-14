@@ -1,167 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!-- Tags for SEO-->
+    <meta charset="utf-8" />
     <meta
-      name="description"
-      content="Artificial Intelligence, Cybersecurity, Professional Services Consultant, Software Engineering"
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="keywords"
-      content="Artificial Intelligence, Cybersecurity, Professional Services Consultant, Software Engineering"
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+      type="text/css"
     />
-    <meta name="author" content="Vilma Qerama" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Stylesheet linking (reset and style stylesheets)-->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css" /> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <!-- Title, Description -->
-    <title>Vilma Qerama - Portfolio & More</title>
-    <!-- Favicon-->
-    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-
-  <body>
-  <!-- Introduce a container for easier management for the media queries -->
-
-    <div class="container">
-
-    <!-- Vertical navbar with links pointing to the respective sections -->
-        <nav class="navbar">
-          <!-- website Logo with animation -->
-            <div class="logo logo--animated">
-                <img
-                src="assets/images/VLogo.png"
-                alt="V Letter Logo"
-                class="logo-image"
-                href="#about"
-                />
-            </div>
-    
-            <div>
-             <li><a href="#about">About Me</a></li>
-            </div>
-    
-            <div>
-              <li> <a href="#projects">Projects</a></li>
-            </div>
-    
-            <div>
-              <li><a href="#contact">Contact me</a></li>
-            </div>
-          </nav>
-  
-     
-     <main class="content">
-
-            <h1 class="title">Vilma Qerama</h1>
-            <h2 class="subtitle">Personal Website & Portfolio</h2>
-
-<!-- About Me Section -->
-
-        <section id="about" class="about">
-            <h1> About me</h1>
-
-            <div class="card-about-container">
-                <div class="card-about">
-                    <div class="card-image-about-container">
-                    <a href="https://www.linkedin.com/in/vilmaqerama/" target="_blank">
-                    <img 
-                    class="card-image-about" 
-                    src= "assets/images/V.png" 
-                    alt="Coding image"
-                    /> 
-                    </a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card-about-container">
-                <div class="card-about-me-content"> Graduated with a MsC in Computer Science & Engineering. Actually working as a Professional Services Consultant, with a vast experience and knowledge of IT & Software. Driven from the desire to learn new things and for new adventures, I decided to register for this amazing Coding Bootcamp, while studying for Cybersecurity and AI. A lover of the sea, arts and sports. (Click on my picture & check my LinkedIn Profile)
-                      </div>
-                  </div>
-         <section>
-
-<!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h1> Projects</h1>
-
-            <div class="cards-container">
-                <div class="card">
-                    <div class="card-title"> HTML & CSS Code Refactoring</div>
-                    <div class="card-image-container1">
-                    <a href="https://vilmaq.github.io/horiseon_website_refactor/" target="_blank">
-                    <img 
-                    class="card-image1" 
-                    src= "assets/images/coding.jpg" 
-                    alt="Coding image"
-                    /> 
-                    </a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="cards-container">
-                    <div class="card">
-                        <div class="card-title"> My portfolio</div>
-                        <div class="card-image-container">
-                        <a href="https://vilmaq.github.io/Portfolio/" target="_blank">
-                        <img 
-                        class="card-image" 
-                        src= "assets/images/portfolio.jpg" 
-                        alt="Coding image"
-                        /> 
-                        </a>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="cards-container">
-                        <div class="card">
-                            <div class="card-title"> Java Project - Password Generator</div>
-                            <div class="card-image-container">
-                            <a href="https://vilmaq.github.io/password-generator/ target="_blank">
-                            <img 
-                            class="card-image" 
-                            src= "assets/images/javaproject.jpg" 
-                            alt="Coding image"
-                            /> 
-                            </a>
-                            </div>
-                            </div>
-                        </div>
-         </section>
-        
-<!-- Contact Me Section -->
-        <section id="contact" class="contact">
-          <h1>Contact me</h1>
-           <form>
-              <div class="form-group">
-                  <label>First Name</label>
-                  <input value="Name" class="input-control" />
-                  <label class="right-inline">Last Name</label>
-                  <input value="Lastname" class="input-control" /></div>
-    
-    
-              <div class="form-group">
-                <label>Challenge me</label>
-                <textarea class="input-control"> Ask me something...</textarea></div>
-    
-              <div class="form-group">
-                <label>&nbsp;</label>
-                <button>Send</button></div>
-            </form>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Vilma Qerama</span>
+        <span class="d-none d-lg-block"
+          ><img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="assets/img/profile.jpg"
+            alt="..."
+        /></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests"
+              >Interests</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link js-scroll-trigger"
+              href="./docs/CV_VilmaQ.pdf"
+              download
+              >CV</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Vilma
+            <span class="text-primary">Qerama</span>
+          </h1>
+          <div class="subheading mb-5">
+            Birmingham · United Kingdom, B15· (44) 777-7777 ·
+            <a href="mailto:name@email.com">vilma.qerama@hotmail.com</a>
           </div>
+          <p class="lead mb-5">
+            Experienced Professional Services with a demonstrated history of
+            working in the Computer Software industry. Skilled in Databases,
+            .Net, Virtualization, Software Project Management, Robotic Process
+            Automation (RPA), Operating Systems. Strong information technology
+            professional graduated with a Bsc in Computer Engineering, followed
+            by a MsC in Computer Science. Eager to solve Algorithmic and
+            Mathematical challenges, with a weak spot for Genetics and
+            Nutrition.
+          </p>
+          <div class="social-icons">
+            <a
+              class="social-icon"
+              href="https://www.linkedin.com/in/vilmaqerama/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="social-icon" href="https://github.com/vilmaq/"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a class="social-icon" href="https://twitter.com/"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Senior Consultant, Professional Services</h3>
+              <div class="subheading mb-3">Cisco</div>
+              <p>
+                - Work in large projects, manage the customer's expectations and
+                drive the technical aspects in the project - Collaborate with
+                project managers to ensure that value is being delivered
+                according to the time plan and the agreed goals - Creatively
+                craft solutions to solve our customer’s problems - Enable
+                customers by doing knowledge transfer - Provide consultation and
+                lead the customer implementation, be a trusted advisor to
+                customers - Work with our internal team and cross-teams to share
+                the knowledge and support each other - Provide mentorship to new
+                hires during the onboarding. · · · Technologies: .Net, Java,
+                SQL, gitHub, Linux, Cloud technologies, Containers & Micro
+                Services, DevOps, Automation, Service Management
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">April 2021 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Consultant, Professional Services</h3>
+              <div class="subheading mb-3">Cisco</div>
+              <p></p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">January 2020 - April 2021</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Consultant</h3>
+              <div class="subheading mb-3">Infinity CSS</div>
+              <p>
+                Podcasting operational change management inside of workflows to
+                establish a framework. Taking seamless key performance
+                indicators offline to maximise the long tail. Keeping your eye
+                on the ball while performing a deep dive on the start-up
+                mentality to derive convergence on cross-platform integration.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">October 2016 - December 2019</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">
+                Head of Computer - Telephony Integration System
+              </h3>
+              <div class="subheading mb-3">Teleperformance Albania & Italy</div>
+              <p>
+                - Implement computer – telephony solutions - Develop reports and
+                customer web interfaces in .Net and T-SQL - Document and
+                demonstrate solutions by developing documentation, flowcharts,
+                layouts, diagrams, charts, code comments and clear code -
+                Improve operations by conducting systems analysis, data reports
+                and recommend changes in policies and procedures - Protect
+                operations by keeping information confidential - Accomplish
+                engineering and organization mission by completing related
+                projects as needed - Provide leadership, guidance, training and
+                development to the CTI Team on the usage company software and
+                systems. - Prompt the team toward innovations, independence in
+                problem troubleshooting, solving and professional growth -
+                Continuous guidance and collaboration with the organisation’s
+                teams. ···Technologies: MS SQL, .Net, Avaya, CallMedia, Windows
+                Server
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">September 2010 - October 2016</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">System Engineer</h3>
+              <div class="subheading mb-3">MoD of Albania</div>
+              <p>
+                ···Technologies: TETRA, Lockheed Martin, Networking, Databases
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">March 2011 - September 2015</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Education</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">University of Tirana, Faculty of Science</h3>
+              <div class="subheading mb-3">MsC Computer Science</div>
+              <div>
+                Computer Science - Artificial Intelligence, Software
+                Engineering, Algorithms, Advanced Mathematics, Cryptography,
+                Java, MS SQL
+              </div>
+              <p></p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">September 2009 - September 2011</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Polytechnic Univeristy of Tirana</h3>
+              <div class="subheading mb-3">BsC Computer Engineering</div>
+              <div>
+                Advanced Analytical Mathematics, Advanced Algebra, Advanced
+                Physics, Electrotechnical Engineering, C, Operating Systems,
+                Software Engineering, Java, MS SQL
+              </div>
+              <p></p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">October 2006 - July 2009</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages & Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item"><i class="fas fa-database"></i></li>
+            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+            <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+          </ul>
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              APM - Application Performance Monitoring
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Testing & Debugging customers applications
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Cross Functional Teams
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Cybersecurity in Progress
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Interests-->
+      <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Interests</h2>
+          <p>
+            Apart from being a consultant, I enjoy travelling to new places,
+            running, playing tennis and swim when possible.
+          </p>
+          <p class="mb-0">
+            When forced indoors, I am an aspiring chef that loves experimenting
+            with taste, and I spend a large amount of my free time exploring the
+            latest technology advancements.
+          </p>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Awards-->
+      <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Awards & Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              RPA Developer
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              ITIL v4
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
 
-        </section>
-
-
-        </main>
-
+              APM Expert
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              1
+              <sup>st</sup>
+              Winner of Mathematics Olympiad in high school
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-    
+    <hr class="m-0" />
+    <!-- Awards-->
+    <!-- Portfolio-->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://vilmaq.github.io/samplify-uk/"
+              target="_blank"
+            >
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Samplify</div>
+                  <p class="mb-0">Your next music app!</p>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/portfolio-1.jpg"
+                alt="Samplify - a new music app"
+              />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://vilmaq.github.io/weather-app/"
+              target="_blank"
+            >
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Weather App</div>
+                  <p class="mb-0">Check your weather with my app!</p>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/portfolio-2.jpg"
+                alt="Weather app"
+              />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/vilmaq/readme-generator"
+              target="_blank"
+            >
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Readme generator</div>
+                  <p class="mb-0">Node JS & inquirer</p>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/portfolio-3.jpg"
+                alt="..."
+              />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/vilmaq/team-html-generator"
+              target="_blank"
+            >
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Team HTML Generator</div>
+                  <p class="mb-0">Coming soon!</p>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/portfolio-4.jpg"
+                alt="..."
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
-
 </html>
